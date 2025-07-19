@@ -1,0 +1,109 @@
+ /* .btn{
+    height: 200px;
+    width: 200px;
+    border-radius:20%;
+    border: 10px solid black;
+    margin:3rem;
+ }
+
+ body{
+    text-align: center;
+ }
+
+ .btn-container{
+    display:flex;
+    justify-content:center;
+ }
+ .red{
+    background-color: red;
+ }
+ .yellow{
+    background-color: yellow;
+ }
+ .green{
+    background-color: green;
+ }
+ .purple{
+    background-color: purple;
+ }
+ .flash{
+    background-color: white;
+ }
+ .userflash{
+   background-color: green;
+ }
+  .flash {
+    box-shadow: 0 0 20px white;
+}
+
+.userflash {
+    box-shadow: 0 0 20px lime;
+}
+.btn {
+    transition: all 0.2s ease;
+} */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+h2 {
+    margin: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.red {
+    background-color: #ff5252;
+}
+
+.yellow {
+    background-color: #ffd740;
+}
+
+.green {
+    background-color: #69f0ae;
+}
+
+.purple {
+    background-color: #b388ff;
+}
+
+.flash {
+    box-shadow: 0 0 20px white;
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.userflash {
+    box-shadow: 0 0 20px lime;
+    transform: scale(1.05);
+}
+
+.game-over {
+    background-color: #ff5252;
+    animation: flashBackground 0.5s;
+}
+
+@keyframes flashBackground {
+    0%{ background-color: white; }
+    100% { background-color: #ff5252; }
+}
